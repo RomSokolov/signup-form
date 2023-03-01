@@ -1,0 +1,110 @@
+@import url(./config.css);
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(99, 99, 231);
+    flex-direction: column;
+}
+
+.form__box {
+    position: relative;
+    width: 375px;
+    height: auto;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__value{
+    margin: 40px 0 40px;
+}
+
+.title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid black;
+}
+
+
+.inputbox label {
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: 0;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    padding: 0 35px 0 5px;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    top:20px;
+    right: 8px;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+.sublabel {
+    font-family:monospace;
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+}
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+    letter-spacing: .1em;
+    margin-bottom: 20px;
+}
+
+.privacy input {
+    margin-right: 10px;
+}
+
+.privacy__link{
+    text-decoration: none;
+    color: rgb(20, 46, 119);
+}
+
+.privacy__link:hover{
+    text-decoration: underline;
+   
+}
+
+.signup__button {
+    width: 100%;
+    height: 40px;
+    background: rgb(160, 91, 117);
+    border: none;
+    outline: none;
+    font-size: .9em;
+    border-radius: 40px;
+}
+

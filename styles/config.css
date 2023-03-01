@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Arcade Classic";
+  src: url(../fonts/arcadeclassic.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arcade Classic";
+}
