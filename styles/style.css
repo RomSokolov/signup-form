@@ -1,110 +1,170 @@
 @import url(./config.css);
 
 .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    background: rgb(99, 99, 231);
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url(../img/background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+
+  flex-direction: column;
 }
 
 .form__box {
-    position: relative;
-    width: 375px;
-    height: auto;
-    background-color: brown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 375px;
+  height: auto;
+  background-color: rgb(165, 42, 42,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.form__value{
-    margin: 40px 0 40px;
+.form__value {
+  margin: 40px 0 40px;
 }
 
 .title {
-    font-size: 2em;
-    text-align: center;
+  font-size: 2em;
+  text-align: center;
 }
 
 .inputbox {
-    position: relative;
-    margin: 30px 0;
-    width: 310px;
-    border-bottom: 2px solid black;
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid black;
 }
+
 
 
 .inputbox label {
-    position: absolute;
-    top:50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    pointer-events: 0;
-    transition: .5s;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  pointer-events: 0;
+  transition: 0.5s;
 }
 
 input:focus ~ label,
-input:valid ~ label{
-top: -5px;
+input:valid ~ label {
+  top: -5px;
 }
 
+
+
+
 .inputbox input {
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1.5em;
-    padding: 0 35px 0 5px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+}
+
+.inputbox input:-webkit-autofill {
+  box-shadow: inset 0 0 0 50px brown;
 }
 
 .inputbox ion-icon {
-    position: absolute;
-    top:20px;
-    right: 8px;
-    color: rgb(0, 0, 0);
-    font-size: 1.2em;
+  position: absolute;
+  top: 20px;
+  right: 8px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
 }
 
 .sublabel {
-    font-family:monospace;
-    margin: -15px 0 15px;
-    font-size: 0.9em;
+  font-family: monospace;
+  margin: -15px 0 60px;
+  font-size: 0.9em;
 }
 
 .privacy {
-    display: flex;
-    justify-content: center;
-    font-size: .8em;
-    letter-spacing: .1em;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
 }
 
 .privacy input {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.privacy__link{
-    text-decoration: none;
-    color: rgb(20, 46, 119);
+.privacy__link {
+  text-decoration: none;
+  color: rgb(20, 46, 119);
 }
 
-.privacy__link:hover{
-    text-decoration: underline;
-   
+.privacy__link:hover {
+  text-decoration: underline;
 }
 
 .signup__button {
-    width: 100%;
-    height: 40px;
-    background: rgb(160, 91, 117);
-    border: none;
-    outline: none;
-    font-size: .9em;
-    border-radius: 40px;
+  width: 100%;
+  height: 40px;
+  background: rgba(50, 122, 60, 0.6);
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  border-radius: 40px;
 }
 
+.signup__button:hover {
+  cursor: pointer;
+}
+
+.select__country {
+  position: relative;
+  width: 310px;
+  margin-bottom: 30px;
+}
+
+.select__country label {
+position: absolute;
+  top: 15%;
+  left: 5px;
+  transform: translateY(-120%);
+  font-size: 1em;
+  pointer-events: 0;
+  transition: 0.5s;
+}
+
+
+select:focus ~ label {
+  top: -5px;
+}
+
+.select__country select {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: .9em;
+  padding: 0 35px 0 0;
+}
+
+.show__password {
+    position: absolute;
+    top: 40%;
+    right: 12%;
+    opacity: 0;
+}
+
+.hidden {
+    display:none;
+}
+
+.eye__off {
+    transition: 1s;
+}

@@ -14,26 +14,64 @@
           <form action="">
             <h2 class="title">Sign Up</h2>
             <div class="inputbox email">
-              <input type="email" name="email" id="email" required />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                title="Enter email"
+                required
+              />
               <label for="email">Email</label>
             </div>
             <div class="inputbox password">
-              <ion-icon name="eye-off-outline"></ion-icon>
+              <ion-icon class="eye__on" name="eye-outline"></ion-icon>
+              <ion-icon class="eye__off" name="eye-off-outline"></ion-icon>
               <input
                 type="password"
                 name="password"
                 id="password"
                 minlength="8"
+                title="Enter password"
                 required
               />
               <label for="password">Password</label>
             </div>
+            <input
+              class="show__password visually__hidden"
+              type="checkbox"
+              id="show-pass"
+            />
             <div class="sublabel">At least 8 characcters</div>
+            <div class="select__country">
+              <select
+                name="country"
+                id="country__select"
+                title="select your country"
+                required
+              >
+                <option value="">Select country</option>
+                <option value="narnia">Narnia</option>
+                <option value="atlantida">Atlantida</option>
+                <option value="endor">Endor</option>
+                <option value="Vesteros">Vesteros</option>
+              </select>
+              <label for="country__select">Country</label>
+            </div>
             <div class="privacy">
-              <input type="checkbox" name="privacy" id="privacy" />
+              <input
+                type="checkbox"
+                name="privacy"
+                id="privacy"
+                title="click!"
+                required
+              />
               <label for="privacy"
                 >I agree with the
-                <a class="privacy__link" href="#">Privacy Police</a></label
+                <a
+                  class="privacy__link"
+                  href="https://i.pinimg.com/564x/98/1a/99/981a9973393cb5116e9bea15eef0eeda.jpg"
+                  >Privacy Police</a
+                ></label
               >
             </div>
             <button class="signup__button">Sign Up</button>
@@ -50,5 +88,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./js/view password.js"></script>
   </body>
 </html>
